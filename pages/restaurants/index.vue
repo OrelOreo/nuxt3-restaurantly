@@ -1,8 +1,10 @@
 <template>
     <div>
-        <Nav />
-        <div>
-            <RestaurantTable />
-        </div>
+            <div>
+                <RestaurantTable />
+            </div>
     </div>
 </template>
+
+<script>
+</script>

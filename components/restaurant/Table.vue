@@ -30,6 +30,7 @@ const restaurantsOrganized = {
                 :index="index"/>
             </div>
         </div>
+        <RestaurantAd />
     </div>
 </template>
  

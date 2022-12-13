@@ -6,12 +6,11 @@ const props = defineProps({
 
 <template>
     <div>
-    <Nav />
-    <div class="container">
-      <h1>{{ error.statusCode }}</h1>
-      <h2 class="text-2xl">{{ error.statusMessage }} 😕</h2>
-     <NuxtLink class="nuxtlink" to="/restaurants"> Go Back </NuxtLink>
-    </div>
+      <div class="container">
+        <h1>{{ error.statusCode }}</h1>
+        <h2 class="text-2xl">{{ error.statusMessage }} 😕</h2>
+        <NuxtLink class="nuxtlink" to="/restaurants"> Go Back </NuxtLink>
+      </div>
     </div>
   </template>
   

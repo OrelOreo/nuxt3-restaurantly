@@ -7,7 +7,6 @@ const restaurant = restaurants.find((restaurant) => restaurant.name === name)
 </script>
 
 <template>
-    <Nav />
     <div>
         <div class="restaurant-container">
             <div class="image-container">
@@ -26,6 +25,7 @@ const restaurant = restaurants.find((restaurant) => restaurant.name === name)
                 <p class="content">{{ restaurant?.content }}</p>
             </div>
         </div>
+        <RestaurantAd />
     </div>
 </template>
 
