@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import restaurants from "@/data.json"
 const restaurantsOrganized = {
     // Prend les restaurants de l'index 0 jusqu'à 25
@@ -7,7 +6,6 @@ const restaurantsOrganized = {
     // Prend les restaurants de l'index 25 jusqu'au 25 derniers
     second: [...restaurants].splice(25,25)
 }
-
 </script>
 
 
@@ -37,7 +35,6 @@ const restaurantsOrganized = {
  
 
 <style scoped>
-
     .table {
         display: initial;
     }
@@ -45,15 +42,12 @@ const restaurantsOrganized = {
         margin-bottom: 2rem;
         margin-left: 5rem;
     }
-
     .table-container {
         display: flex;
         justify-content: space-between;
     }
-
     .table-col {
         width: 48%;
         margin-left: 5rem;
     }
-
 </style>

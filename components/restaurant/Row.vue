@@ -6,7 +6,6 @@ interface RowProps {
     index?: number,
     isHeader?: boolean
 }
-
 const props = defineProps<RowProps>()
 </script>
 
@@ -19,7 +18,7 @@ const props = defineProps<RowProps>()
     <div
     v-else 
     class="row" 
-    :style="index % 2 === 0 ? {background: 'rgba(128,128,128,0.15)'} : ''">
+    :style="index && index % 2 === 0 ? {background: 'rgba(128,128,128,0.15)'} : ''">
         <h4 class="header rank">{{ rank }}</h4>
         <a :href="`/restaurants/${name}`" class="header link">{{ name }}</a>
     </div>
@@ -31,7 +30,6 @@ const props = defineProps<RowProps>()
 
 
 <style scoped>
-
 .row {
   border-top: 1px solid rgba(128, 128, 128, 0.336);
   display: flex;
@@ -55,5 +53,4 @@ const props = defineProps<RowProps>()
   width: auto;
   font-weight: 500;
 }
-
 </style>
